@@ -1,0 +1,20 @@
+{
+  "name": "icestark-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:main": "cd main-app && npm i",
+    "install:sub1": "cd sub1-react-app && npm i",
+    "install:all": "npm-run-all -p install:main install:sub1",
+    "serve:main": "cd main-app && npm run start",
+    "serve:sub1": "cd sub1-react-app && npm run start",
+    "serve:all": "npm-run-all -p serve:main serve:sub1"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,6 @@
+/node_modules/
+/package-lock.json
+/main-app/node_modules/
+/main-app/package-lock.json
+/sub-react1-app/node_modules/
+/sub-react1-app/package-lock.json
