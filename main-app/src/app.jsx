@@ -1,5 +1,7 @@
 import React from 'react'
-import { createApp } from 'ice';
+import ReactDOM from 'react-dom'
+import Layout from './layout'
+import { createApp } from 'ice'
 import { ConfigProvider } from '@alifd/next'
 import './global.scss'
 const appConfig = {
@@ -14,3 +16,12 @@ const appConfig = {
   }
 }
 createApp(appConfig)
+
+
+
+// ReactDOM.render(
+//   <ConfigProvider prefix="next-layout-">
+//     <Layout/>
+//   </ConfigProvider>,
+//   document.querySelector('#ice-container')
+// )
