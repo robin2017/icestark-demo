@@ -1,0 +1,30 @@
+@import '@/var.scss';
+.container {
+  height: 100%;
+}
+
+.iframe {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+.rectangular {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  height: calc(100% - 52px);
+  :global(.#{$next-prefix}-shell-content-inner) {
+      height:100%;
+  }
+}
+
+
+.sub{
+    height:100%;
+    background: #fff
+}

@@ -1,16 +1,9 @@
-import BasicLayout from '@/layouts/BasicLayout';
-import Dashboard from '@/pages/Dashboard';
-
-const routerConfig = [
+import Layout from '@/layout';
+ 
+//只有一个页面，可以不用router
+export default  [
   {
     path: '/',
-    component: BasicLayout,
-    children: [
-      {
-        path: '/',
-        component: Dashboard,
-      },
-    ],
-  },
-];
-export default routerConfig;
+    component:Layout
+  }
+];;
