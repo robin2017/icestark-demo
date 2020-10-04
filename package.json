@@ -7,9 +7,16 @@
     "install:main": "cd main-app && npm i",
     "install:sub1": "cd sub1-react-app && npm i",
     "install:all": "npm-run-all -p install:main install:sub1",
-    "serve:main": "cd main-app && npm run start",
-    "serve:sub1": "cd sub1-react-app && npm run start",
-    "serve:all": "npm-run-all -p serve:main serve:sub1"
+    "start:main": "cd main-app && npm run start",
+    "start:sub1": "cd sub1-react-app && npm run start",
+    "start:all": "npm-run-all -p start:main start:sub1",
+    "install:demo:main": "cd demo-office/main-app && npm i",
+    "install:demo:sub1": "cd demo-office/sub1-react-app && npm i",
+    "install:demo:all": "npm-run-all -p install:demo:main install:demo:sub1",
+    "start:demo:main": "cd demo-office/main-app && npm run start",
+    "start:demo:sub1": "cd demo-office/sub1-react-app && npm run start",
+    "start:demo:all": "npm-run-all -p start:demo:main start:demo:sub1"
+
 
   },
   "author": "",

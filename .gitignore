@@ -1,6 +1,14 @@
 /node_modules/
 /package-lock.json
+
+
 /main-app/node_modules/
 /main-app/package-lock.json
 /sub-react1-app/node_modules/
 /sub-react1-app/package-lock.json
+
+
+/demo-office/main-app/node_modules/
+/demo-office/main-app/package-lock.json
+/demo-office/sub1-react-app/node_modules/
+/demo-office/sub1-react-app/package-lock.json
