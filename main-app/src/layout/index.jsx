@@ -24,5 +24,5 @@ export default function Layout({ children }) {
         </Shell.Content>
       </Shell>
     </div>
-  );
+  )
 }
