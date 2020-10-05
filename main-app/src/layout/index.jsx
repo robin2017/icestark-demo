@@ -13,8 +13,8 @@ export default () => {
           path="/sub"
           title="商家平台"
           url={[
-            '//unpkg.com/icestark-child-seller/build/js/index.js',
-            '//unpkg.com/icestark-child-seller/build/css/index.css',
+            'http://localhost:3001/js/index.js',
+            'http://localhost:3001/css/index.css',
           ]}
         />
         <AppRoute
