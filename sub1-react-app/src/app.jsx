@@ -1,11 +1,9 @@
-import { createApp } from 'ice';
-
-const appConfig = {
-  app: {
-    rootId: 'ice-container'
-  },
-  router: {
-    type: 'browser'
-  }
-};
-createApp(appConfig);
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './global.scss'
+import Router from './router'
+ 
+ReactDOM.render(
+    <Router/>,
+  document.querySelector('#ice-container')
+)
