@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Search, Icon, Nav, Shell } from '@alifd/next';
-
 const { Item, Group, Divider } = Nav;
 import LeftNav from './leftNav'
 import styles from './index.module.scss';

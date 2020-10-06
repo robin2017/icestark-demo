@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch } from 'react-router-dom'
 ReactDOM.render(
   <ConfigProvider prefix="next-layout-">
     <Router>
-        <Layout />
+      <Layout />
     </Router>
   </ConfigProvider>,
   document.querySelector('#ice-container')

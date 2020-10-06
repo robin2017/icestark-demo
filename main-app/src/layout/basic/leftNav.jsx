@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, withRouter } from 'ice';
 import { Nav } from '@alifd/next';
-import menuList from './menuList'
+import routeConfig from '@/routeConfig'
 
 //URL和menu双向绑定了
 const LeftNav = ({ location }) => {
@@ -9,9 +9,9 @@ const LeftNav = ({ location }) => {
   const { pathname } = location;
   return (
     <Nav defaultSelectedKeys={[pathname]} >
-      {menuList.map(menu =>
-        <Nav.Item key={menu.path} icon={menu.icon}>
-          <Link to={menu.path}>{menu.name}</Link>
+      {routeConfig.map(({ name, path, icon }) =>
+        <Nav.Item key={path} icon={icon}>
+          <Link to={path}>{name}</Link>
         </Nav.Item>
       )}
     </Nav>
