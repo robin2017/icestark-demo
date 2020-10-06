@@ -1,6 +1,15 @@
 import React from 'react'
-export default ()=>{
+import { useHistory } from 'react-router-dom'
+const Home = () => {
+    const history = useHistory()
     return (
-        <div>hello,sub app</div>
+        <div>
+            <div>hello,sub app</div>
+            <button onClick={() => {
+                history.push('/about')
+            }}>about</button>
+        </div>
     )
 }
+
+export default Home

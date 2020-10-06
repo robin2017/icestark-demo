@@ -3,7 +3,7 @@ import AboutPage from '@/pages/about'
 export default [
   {
     path: '/',
-    exact:true,
+    exact: true,
     component: HomePage
   },
   {

@@ -1,33 +1,35 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route,withRouter } from 'react-router-dom'
 import routes from './config'
-//1、配置只支持三个属性:path,component,children
+console.log('withrouter:',withRouter)
+//1、配置只支持四个属性:path,component,children,exact
 //2、switch-route搭配使用，可以继续封装吗？
 const RouterIndex = () => {
     return (
-        // <Router basename="robin">
-        <Router>
+        //作为子应用，必须添加basename！！！
+        <Router basename='sub'>
             <Switch>
                 {routes.map((route, id) => {
                     //给component重命名RouteComponent
-                    const { component: RouteComponent, children, path } = route
+                    const { component: RouteComponent, children, path,exact } = route
                     return (
                         <Route
-                            // exact={true}
+                            exact={exact}
                             key={id}
                             path={path}
-                            component={() => {
+                            component={(props) => {
+                                console.log('Route传递props:', props)
                                 return children ? (
                                     <RouteComponent key={id} path={path}>
                                         <Switch>
                                             {children.map((routeChild, idx) =>
                                                 <Route key={idx}
-                                                    // exact={true}
+                                                    exact={routeChild.exact}
                                                     path={routeChild.path}
                                                     render={routeChild.component} />)}
                                         </Switch>
                                     </RouteComponent>
-                                ) : <RouteComponent/>
+                                ) : <RouteComponent />
                             }}
                         />
                     )
