@@ -9,7 +9,9 @@ export default () => {
   return (
     <BasicLayout>
       <AppRouter onRouteChange={handleRouteChange}>
-        {routes.map(({ name, path, icon, ...other }) => <AppRoute key={path} path={path} title={name} {...other} />)}
+        {routes.map(({ name, path, icon, ...other }) =>
+          <AppRoute key={path} path={path} title={name} {...other} />
+        )}
       </AppRouter>
     </BasicLayout>
   )
