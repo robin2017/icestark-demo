@@ -3,15 +3,15 @@ import HomePage from '@/page/home'
 export default [
     //1、内置组件，特殊属性component
     {
-        name: '子应用',
-        path: '/sub',
-        icon: 'account',
+        name: '主页',
+        path: '/home',
+        icon: 'atm',
         component: HomePage
     },
     //2、子应用，特殊属性url
     {
-        name: '主页',
-        path: '/home',
+        name: '子应用',
+        path: '/sub',
         icon: 'smile',
         url: [
             'http://localhost:3001/js/index.js',

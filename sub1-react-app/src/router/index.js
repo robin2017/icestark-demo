@@ -13,6 +13,7 @@ const RouterIndex = () => {
                     const { component: RouteComponent, children, path } = route
                     return (
                         <Route
+                            // exact={true}
                             key={id}
                             path={path}
                             component={() => {
@@ -21,11 +22,12 @@ const RouterIndex = () => {
                                         <Switch>
                                             {children.map((routeChild, idx) =>
                                                 <Route key={idx}
+                                                    // exact={true}
                                                     path={routeChild.path}
                                                     render={routeChild.component} />)}
                                         </Switch>
                                     </RouteComponent>
-                                ) : <RouteComponent />
+                                ) : <RouteComponent/>
                             }}
                         />
                     )
