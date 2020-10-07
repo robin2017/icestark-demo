@@ -7,7 +7,7 @@ console.log('withrouter:',withRouter)
 const RouterIndex = () => {
     return (
         //作为子应用，必须添加basename！！！
-        <Router basename='sub1'>
+        <Router basename='sub2'>
             <Switch>
                 {routes.map((route, id) => {
                     //给component重命名RouteComponent

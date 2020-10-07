@@ -10,12 +10,21 @@ export default [
     },
     //2、子应用，特殊属性url
     {
-        name: '子应用',
-        path: '/sub',
+        name: '子应用1',
+        path: '/sub1',
         icon: 'smile',
         url: [
             'http://localhost:3001/js/index.js',
             'http://localhost:3001/css/index.css',
+        ]
+    },
+    {
+        name: '子应用2',
+        path: '/sub2',
+        icon: 'smile',
+        url: [
+            'http://localhost:3002/js/index.js',
+            'http://localhost:3002/css/index.css',
         ]
     },
     //3、外链网页，特殊属性render
