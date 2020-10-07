@@ -16,10 +16,12 @@
     "注释2":"官方项目示例",
     "install:demo:main": "cd demo-office/main-app && npm i",
     "install:demo:sub1": "cd demo-office/sub1-react-app && npm i",
-    "install:demo:all": "npm-run-all -p install:demo:main install:demo:sub1",
+    "install:demo:sub2": "cd demo-office/sub2-react-app && npm i",
+    "install:demo:all": "npm-run-all -p install:demo:main install:demo:sub1 install:demo:sub2",
     "start:demo:main": "cd demo-office/main-app && npm run start",
     "start:demo:sub1": "cd demo-office/sub1-react-app && npm run start",
-    "start:demo:all": "npm-run-all -p start:demo:main start:demo:sub1"
+    "start:demo:sub2": "cd demo-office/sub2-react-app && npm run start",
+    "start:demo:all": "npm-run-all -p start:demo:main start:demo:sub1 start:demo:sub2"
   },
   "author": "",
   "license": "ISC",
