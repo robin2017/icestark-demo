@@ -1,19 +1,19 @@
 import React from 'react'
-import { Link, withRouter } from 'ice';
+import { Link, useLocation } from 'react-router-dom';
 import { Nav } from '@alifd/next';
 import routeConfig from '@/routeConfig'
 
-const getAppName = (pathname)=>{
+const getAppName = (pathname) => {
   //pathname肯定是/开头
   let arr = pathname.split('/')
   return '/' + arr[1]
 }
 
 //URL和menu双向绑定了
-const LeftNav = ({ location }) => {
-
+const LeftNav = () => {
+  const location = useLocation()
   const { pathname } = location;
-  console.log('location:', location,pathname)
+  console.log('location:', location, pathname)
   return (
     <Nav defaultSelectedKeys={[getAppName(pathname)]} >
       {routeConfig.map(({ name, path, icon }) =>
@@ -24,6 +24,4 @@ const LeftNav = ({ location }) => {
     </Nav>
   )
 }
-// withRouter装饰器可以从props中获取history，location等对象
-//https://ice.work/docs/guide/basic/api#withRouter
-export default withRouter(LeftNav)
+export default LeftNav
