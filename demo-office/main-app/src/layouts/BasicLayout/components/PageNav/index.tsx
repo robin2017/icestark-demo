@@ -57,7 +57,9 @@ function getSubMenuOrItem(item: IMenuItem, index: number, isCollapse: boolean) {
 }
 
 const Navigation = (props, context) => {
+ 
   const { pathname } = props;
+  console.log('pathname:',pathname)
   const { isCollapse } = context;
 
   return (

@@ -1,7 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route,withRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import routes from './config'
-console.log('withrouter:',withRouter)
 //1、配置只支持四个属性:path,component,children,exact
 //2、switch-route搭配使用，可以继续封装吗？
 const RouterIndex = () => {
